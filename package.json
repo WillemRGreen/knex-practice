@@ -1,11 +1,11 @@
 {
   "name": "express-boilerplate",
   "version": "1.0.0",
-  "description": "",
+  "description": "This is a boilerplate project used for starting new projects!",
   "main": "index.js",
   "scripts": {
     "test": "mocha --require test/setup.js",
-    "start": "node src/server.js",
+    "start": "node src/blogful.js",
     "predeploy": "npm audit",
     "deploy": "git push heroku master",
     "dev": "nodemon src/server.js"
@@ -18,12 +18,25 @@
     "dotenv": "^8.2.0",
     "express": "^4.17.1",
     "helmet": "^4.1.1",
-    "morgan": "^1.10.0"
+    "knex": "^0.21.8",
+    "morgan": "^1.10.0",
+    "pg": "^8.4.2"
   },
   "devDependencies": {
     "chai": "^4.2.0",
     "mocha": "^8.2.0",
     "nodemon": "^2.0.6",
     "supertest": "^5.0.0"
-  }
+  },
+  "directories": {
+    "test": "test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/WillemRGreen/knex-practice.git"
+  },
+  "bugs": {
+    "url": "https://github.com/WillemRGreen/knex-practice/issues"
+  },
+  "homepage": "https://github.com/WillemRGreen/knex-practice#readme"
 }
